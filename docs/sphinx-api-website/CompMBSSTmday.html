@@ -1,0 +1,396 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CompMBSSTmday Script &mdash; Roy Scripts API 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=412b7542" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=2709fde1"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="makeChla1daynewMW Script" href="makeChla1daynewMW.html" />
+    <link rel="prev" title="CompMBSST Script" href="CompMBSST.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Roy Scripts API
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="roylib.html">roylib Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.get_netcdfFile"><code class="docutils literal notranslate"><span class="pre">get_netcdfFile()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.grd2netcdf"><code class="docutils literal notranslate"><span class="pre">grd2netcdf()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.grd2netcdf1"><code class="docutils literal notranslate"><span class="pre">grd2netcdf1()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.isleap"><code class="docutils literal notranslate"><span class="pre">isleap()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.makeNetcdf"><code class="docutils literal notranslate"><span class="pre">makeNetcdf()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.makeNetcdfmDay"><code class="docutils literal notranslate"><span class="pre">makeNetcdfmDay()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.meanVar"><code class="docutils literal notranslate"><span class="pre">meanVar()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.mean_sumsq"><code class="docutils literal notranslate"><span class="pre">mean_sumsq()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.myReshape"><code class="docutils literal notranslate"><span class="pre">myReshape()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.retrieve_new_files"><code class="docutils literal notranslate"><span class="pre">retrieve_new_files()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.retrieve_new_files1"><code class="docutils literal notranslate"><span class="pre">retrieve_new_files1()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.safe_remove"><code class="docutils literal notranslate"><span class="pre">safe_remove()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.send_ncml_to_servers"><code class="docutils literal notranslate"><span class="pre">send_ncml_to_servers()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.send_to_servers"><code class="docutils literal notranslate"><span class="pre">send_to_servers()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.update_modis_1day"><code class="docutils literal notranslate"><span class="pre">update_modis_1day()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.update_modis_composite"><code class="docutils literal notranslate"><span class="pre">update_modis_composite()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.url_lines"><code class="docutils literal notranslate"><span class="pre">url_lines()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.url_lines1"><code class="docutils literal notranslate"><span class="pre">url_lines1()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="newGetModis.html">newGetModis Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="newGetModis.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newGetModis.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newGetModis.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newGetModis.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newGetModis.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newGetModis.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="makeChla1daynewMB.html">makeChla1daynewMB Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMB.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMB.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMB.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMB.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMB.html#land-mask">Land Mask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMB.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMB.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMBChla.html">CompMBChla Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChla.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChla.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChla.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChla.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChla.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChla.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMBChlamday.html">CompMBChlamday Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChlamday.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChlamday.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChlamday.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChlamday.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChlamday.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChlamday.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="makeSST1daynewMB.html">makeSST1daynewMB Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMB.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMB.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMB.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMB.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMB.html#land-mask">Land Mask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMB.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMB.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMBSST.html">CompMBSST Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSST.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSST.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSST.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSST.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSST.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSST.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">CompMBSSTmday Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="makeChla1daynewMW.html">makeChla1daynewMW Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMW.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMW.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMW.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMW.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMW.html#land-mask">Land Mask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMW.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMW.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMWChla.html">CompMWChla Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChla.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChla.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChla.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChla.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChla.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChla.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMWChlamday.html">CompMWChlamday Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChlamday.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChlamday.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChlamday.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChlamday.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChlamday.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChlamday.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="makeSST1daynewMW.html">makeSST1daynewMW Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMW.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMW.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMW.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMW.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMW.html#land-mask">Land Mask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMW.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMW.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMWSST.html">CompMWSST Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSST.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSST.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSST.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSST.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSST.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSST.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMWSSTmday.html">CompMWSSTmday Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSSTmday.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSSTmday.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSSTmday.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSSTmday.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSSTmday.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSSTmday.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Roy Scripts API</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">CompMBSSTmday Script</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/CompMBSSTmday.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <a href="../index.html" class="backlink">← Back to Quarto Home</a><section id="module-CompMBSSTmday">
+<span id="compmbsstmday-script"></span><h1>CompMBSSTmday Script<a class="headerlink" href="#module-CompMBSSTmday" title="Link to this heading"></a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>Generate <strong>monthly</strong> SST composites for the MODIS “MB” (Pacific Ocean) dataset by averaging
+daily 1-day NetCDF files over a user-defined range of days (typically a calendar month).</p>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">CompMBSSTmday</span><span class="o">.</span><span class="n">py</span> <span class="o">&lt;</span><span class="n">dataDir</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">workDir</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">endYear</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">endDoy</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">startDoy</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Where:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">dataDir</span></code></p>
+<p>Directory containing the daily 1-day SST NetCDFs named <code class="docutils literal notranslate"><span class="pre">MB&lt;YYYY&gt;&lt;DDD&gt;*sstd.nc</span></code>.</p>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">workDir</span></code></p>
+<p>Temporary working directory for intermediate files</p>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">endYear</span></code></p>
+<p>Four-digit year of the last day in the composite (e.g., <code class="docutils literal notranslate"><span class="pre">2025</span></code>).</p>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">endDoy</span></code></p>
+<p>Three-digit day-of-year of the last composite day (e.g., <code class="docutils literal notranslate"><span class="pre">031</span></code>).</p>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">startDoy</span></code></p>
+<p>Three-digit day-of-year of the first composite day (e.g., <code class="docutils literal notranslate"><span class="pre">001</span></code>).</p>
+</li>
+</ul>
+</section>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p><strong>Parse arguments &amp; compute interval</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Read <code class="docutils literal notranslate"><span class="pre">dataDir</span></code>, <code class="docutils literal notranslate"><span class="pre">workDir</span></code>, <code class="docutils literal notranslate"><span class="pre">endYear</span></code>, <code class="docutils literal notranslate"><span class="pre">endDoy</span></code>, and <code class="docutils literal notranslate"><span class="pre">startDoy</span></code> from <code class="docutils literal notranslate"><span class="pre">sys.argv</span></code>.</p></li>
+<li><p>Compute <code class="docutils literal notranslate"><span class="pre">interval</span> <span class="pre">=</span> <span class="pre">endDoy</span> <span class="pre">-</span> <span class="pre">startDoy</span> <span class="pre">+</span> <span class="pre">1</span></code>, the number of days in the composite.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><strong>Compute start/end dates</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Convert <code class="docutils literal notranslate"><span class="pre">endYear`+`endDoy</span></code> to a <code class="docutils literal notranslate"><span class="pre">datetime</span></code> for logging.</p></li>
+<li><p>Derive <code class="docutils literal notranslate"><span class="pre">startDoy</span></code> date by subtracting <code class="docutils literal notranslate"><span class="pre">interval</span> <span class="pre">-</span> <span class="pre">1</span></code> days.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><strong>Initialize accumulators</strong></p></li>
+</ol>
+<blockquote>
+<div><ul>
+<li><p>Change to <code class="docutils literal notranslate"><span class="pre">workDir</span></code> and clear any old files.</p></li>
+<li><p>Preallocate two arrays of shape 4401x8001:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">mean</span></code> (float32) for the running sum of SST.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">num</span></code>  (int32) for the count of observations.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p><strong>Gather daily files</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Build a sorted list of all <code class="docutils literal notranslate"><span class="pre">MB&lt;YYYY&gt;&lt;DDD&gt;*sstd.nc</span></code> files from <code class="docutils literal notranslate"><span class="pre">startDoy</span></code> to <code class="docutils literal notranslate"><span class="pre">endDoy</span></code>, handling wrap-around at year boundaries if needed.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p><strong>Accumulate daily SST</strong></p></li>
+</ol>
+<blockquote>
+<div><ul>
+<li><p>For each file:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Open via <code class="docutils literal notranslate"><span class="pre">Dataset()</span></code>, read the 4-D variable <code class="docutils literal notranslate"><span class="pre">MBsstd</span></code>, squeeze to 2-D.</p></li>
+<li><p>Update <code class="docutils literal notranslate"><span class="pre">mean</span></code> and <code class="docutils literal notranslate"><span class="pre">num</span></code> via <code class="docutils literal notranslate"><span class="pre">meanVar(mean,</span> <span class="pre">num,</span> <span class="pre">sst2d)</span></code>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li><p><strong>Mask and finalize</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Create a masked array: mask cells where <code class="docutils literal notranslate"><span class="pre">num==0</span></code> (no observations) and set fill value <code class="docutils literal notranslate"><span class="pre">-9999999.</span></code>.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="7">
+<li><p><strong>Write &amp; deploy</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Change to <code class="docutils literal notranslate"><span class="pre">workDir</span></code>.</p></li>
+<li><p>Construct an output filename <code class="docutils literal notranslate"><span class="pre">MB&lt;YYYY&gt;&lt;startDDD&gt;_&lt;YYYY&gt;&lt;endDDD&gt;_sstd_mday.nc</span></code>.</p></li>
+<li><p>Call <code class="docutils literal notranslate"><span class="pre">makeNetcdfmDay(mean,</span> <span class="pre">num,</span> <span class="pre">interval,</span> <span class="pre">outFile,</span> <span class="pre">filesUsed,</span> <span class="pre">workDir)</span></code> to produce a CF-compliant NetCDF.</p></li>
+<li><p>Transfer the file to <code class="docutils literal notranslate"><span class="pre">/MB/sstd/</span></code> on the remote server via <code class="docutils literal notranslate"><span class="pre">send_to_servers()</span></code>.</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>Python 3.x</strong></p></li>
+<li><p><strong>Standard library:</strong> <code class="docutils literal notranslate"><span class="pre">os</span></code>, <code class="docutils literal notranslate"><span class="pre">sys</span></code>, <code class="docutils literal notranslate"><span class="pre">glob</span></code>, <code class="docutils literal notranslate"><span class="pre">itertools.chain</span></code>, <code class="docutils literal notranslate"><span class="pre">datetime</span></code>, <code class="docutils literal notranslate"><span class="pre">timedelta</span></code></p></li>
+<li><p><strong>Third-party:</strong> <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, <code class="docutils literal notranslate"><span class="pre">numpy.ma</span></code>, <code class="docutils literal notranslate"><span class="pre">netCDF4.Dataset</span></code></p></li>
+<li><p><strong>Custom roylib functions:</strong></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">isleap(year)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">meanVar(mean,</span> <span class="pre">num,</span> <span class="pre">data)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">makeNetcdfmDay(mean,</span> <span class="pre">num,</span> <span class="pre">interval,</span> <span class="pre">outFile,</span> <span class="pre">filesUsed,</span> <span class="pre">workDir)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">send_to_servers(ncFile,</span> <span class="pre">remote_dir,</span> <span class="pre">interval_flag)</span></code></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="directory-structure">
+<h2>Directory Structure<a class="headerlink" href="#directory-structure" title="Link to this heading"></a></h2>
+<ul>
+<li><p><strong>Input Directory</strong> (<code class="docutils literal notranslate"><span class="pre">dataDir</span></code>):</p>
+<p><code class="docutils literal notranslate"><span class="pre">MB&lt;YYYY&gt;&lt;DDD&gt;*sstd.nc</span></code> daily SST files for the year.</p>
+</li>
+<li><p><strong>Working Directory</strong>  (<code class="docutils literal notranslate"><span class="pre">workDir</span></code>):</p>
+<p>Temporary staging for intermediate and final files.</p>
+</li>
+<li><p><strong>Output Location</strong>:</p>
+<p>Monthly composite written to <code class="docutils literal notranslate"><span class="pre">workDir</span></code> then copied to <code class="docutils literal notranslate"><span class="pre">/MB/sstd/</span></code>.</p>
+</li>
+</ul>
+</section>
+<section id="usage-example">
+<h2>Usage Example<a class="headerlink" href="#usage-example" title="Link to this heading"></a></h2>
+<p>Create a January 2025 composite (DOY 001-031):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">CompMBSSTmday</span><span class="o">.</span><span class="n">py</span> <span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">modisgf</span><span class="o">/</span><span class="mi">1</span><span class="n">day</span><span class="o">/</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">mb_work</span><span class="o">/</span> <span class="mi">2025</span> <span class="mi">031</span> <span class="mi">001</span>
+</pre></div>
+</div>
+<p>This averages daily SST files DOY 001…031 of 2025, writes <code class="docutils literal notranslate"><span class="pre">MB2025001_2025031_sstd_mday.nc</span></code> in <code class="docutils literal notranslate"><span class="pre">/tmp/mb_work/</span></code>, and uploads to <code class="docutils literal notranslate"><span class="pre">/MB/sstd/</span></code>.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="CompMBSST.html" class="btn btn-neutral float-left" title="CompMBSST Script" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="makeChla1daynewMW.html" class="btn btn-neutral float-right" title="makeChla1daynewMW Script" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Roy Mendelssohn &amp; Madison Richardson.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

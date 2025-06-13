@@ -1,0 +1,394 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roy Scripts API Reference &mdash; Roy Scripts API 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=412b7542" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=2709fde1"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="roylib Script" href="roylib.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            Roy Scripts API
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="roylib.html">roylib Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.get_netcdfFile"><code class="docutils literal notranslate"><span class="pre">get_netcdfFile()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.grd2netcdf"><code class="docutils literal notranslate"><span class="pre">grd2netcdf()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.grd2netcdf1"><code class="docutils literal notranslate"><span class="pre">grd2netcdf1()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.isleap"><code class="docutils literal notranslate"><span class="pre">isleap()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.makeNetcdf"><code class="docutils literal notranslate"><span class="pre">makeNetcdf()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.makeNetcdfmDay"><code class="docutils literal notranslate"><span class="pre">makeNetcdfmDay()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.meanVar"><code class="docutils literal notranslate"><span class="pre">meanVar()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.mean_sumsq"><code class="docutils literal notranslate"><span class="pre">mean_sumsq()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.myReshape"><code class="docutils literal notranslate"><span class="pre">myReshape()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.retrieve_new_files"><code class="docutils literal notranslate"><span class="pre">retrieve_new_files()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.retrieve_new_files1"><code class="docutils literal notranslate"><span class="pre">retrieve_new_files1()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.safe_remove"><code class="docutils literal notranslate"><span class="pre">safe_remove()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.send_ncml_to_servers"><code class="docutils literal notranslate"><span class="pre">send_ncml_to_servers()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.send_to_servers"><code class="docutils literal notranslate"><span class="pre">send_to_servers()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.update_modis_1day"><code class="docutils literal notranslate"><span class="pre">update_modis_1day()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.update_modis_composite"><code class="docutils literal notranslate"><span class="pre">update_modis_composite()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.url_lines"><code class="docutils literal notranslate"><span class="pre">url_lines()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.url_lines1"><code class="docutils literal notranslate"><span class="pre">url_lines1()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="newGetModis.html">newGetModis Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="newGetModis.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newGetModis.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newGetModis.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newGetModis.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newGetModis.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newGetModis.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="makeChla1daynewMB.html">makeChla1daynewMB Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMB.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMB.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMB.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMB.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMB.html#land-mask">Land Mask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMB.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMB.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMBChla.html">CompMBChla Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChla.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChla.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChla.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChla.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChla.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChla.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMBChlamday.html">CompMBChlamday Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChlamday.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChlamday.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChlamday.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChlamday.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChlamday.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChlamday.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="makeSST1daynewMB.html">makeSST1daynewMB Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMB.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMB.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMB.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMB.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMB.html#land-mask">Land Mask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMB.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMB.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMBSST.html">CompMBSST Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSST.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSST.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSST.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSST.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSST.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSST.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMBSSTmday.html">CompMBSSTmday Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSSTmday.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSSTmday.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSSTmday.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSSTmday.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSSTmday.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSSTmday.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="makeChla1daynewMW.html">makeChla1daynewMW Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMW.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMW.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMW.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMW.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMW.html#land-mask">Land Mask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMW.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMW.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMWChla.html">CompMWChla Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChla.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChla.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChla.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChla.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChla.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChla.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMWChlamday.html">CompMWChlamday Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChlamday.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChlamday.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChlamday.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChlamday.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChlamday.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChlamday.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="makeSST1daynewMW.html">makeSST1daynewMW Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMW.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMW.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMW.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMW.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMW.html#land-mask">Land Mask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMW.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMW.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMWSST.html">CompMWSST Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSST.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSST.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSST.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSST.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSST.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSST.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMWSSTmday.html">CompMWSSTmday Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSSTmday.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSSTmday.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSSTmday.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSSTmday.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSSTmday.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSSTmday.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Roy Scripts API</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Roy Scripts API Reference</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <a href="../index.html" class="backlink">← Back to Quarto Home</a><section id="roy-scripts-api-reference">
+<h1>Roy Scripts API Reference<a class="headerlink" href="#roy-scripts-api-reference" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="roylib.html">roylib Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.get_netcdfFile"><code class="docutils literal notranslate"><span class="pre">get_netcdfFile()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.grd2netcdf"><code class="docutils literal notranslate"><span class="pre">grd2netcdf()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.grd2netcdf1"><code class="docutils literal notranslate"><span class="pre">grd2netcdf1()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.isleap"><code class="docutils literal notranslate"><span class="pre">isleap()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.makeNetcdf"><code class="docutils literal notranslate"><span class="pre">makeNetcdf()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.makeNetcdfmDay"><code class="docutils literal notranslate"><span class="pre">makeNetcdfmDay()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.meanVar"><code class="docutils literal notranslate"><span class="pre">meanVar()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.mean_sumsq"><code class="docutils literal notranslate"><span class="pre">mean_sumsq()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.myReshape"><code class="docutils literal notranslate"><span class="pre">myReshape()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.retrieve_new_files"><code class="docutils literal notranslate"><span class="pre">retrieve_new_files()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.retrieve_new_files1"><code class="docutils literal notranslate"><span class="pre">retrieve_new_files1()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.safe_remove"><code class="docutils literal notranslate"><span class="pre">safe_remove()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.send_ncml_to_servers"><code class="docutils literal notranslate"><span class="pre">send_ncml_to_servers()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.send_to_servers"><code class="docutils literal notranslate"><span class="pre">send_to_servers()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.update_modis_1day"><code class="docutils literal notranslate"><span class="pre">update_modis_1day()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.update_modis_composite"><code class="docutils literal notranslate"><span class="pre">update_modis_composite()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.url_lines"><code class="docutils literal notranslate"><span class="pre">url_lines()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="roylib.html#roylib.url_lines1"><code class="docutils literal notranslate"><span class="pre">url_lines1()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="newGetModis.html">newGetModis Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="newGetModis.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newGetModis.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newGetModis.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newGetModis.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newGetModis.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newGetModis.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="makeChla1daynewMB.html">makeChla1daynewMB Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMB.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMB.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMB.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMB.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMB.html#land-mask">Land Mask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMB.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMB.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMBChla.html">CompMBChla Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChla.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChla.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChla.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChla.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChla.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChla.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMBChlamday.html">CompMBChlamday Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChlamday.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChlamday.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChlamday.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChlamday.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChlamday.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBChlamday.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="makeSST1daynewMB.html">makeSST1daynewMB Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMB.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMB.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMB.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMB.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMB.html#land-mask">Land Mask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMB.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMB.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMBSST.html">CompMBSST Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSST.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSST.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSST.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSST.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSST.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSST.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMBSSTmday.html">CompMBSSTmday Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSSTmday.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSSTmday.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSSTmday.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSSTmday.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSSTmday.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMBSSTmday.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="makeChla1daynewMW.html">makeChla1daynewMW Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMW.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMW.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMW.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMW.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMW.html#land-mask">Land Mask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMW.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeChla1daynewMW.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMWChla.html">CompMWChla Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChla.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChla.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChla.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChla.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChla.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChla.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMWChlamday.html">CompMWChlamday Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChlamday.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChlamday.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChlamday.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChlamday.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChlamday.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWChlamday.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="makeSST1daynewMW.html">makeSST1daynewMW Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMW.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMW.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMW.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMW.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMW.html#land-mask">Land Mask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMW.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="makeSST1daynewMW.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMWSST.html">CompMWSST Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSST.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSST.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSST.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSST.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSST.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSST.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CompMWSSTmday.html">CompMWSSTmday Script</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSSTmday.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSSTmday.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSSTmday.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSSTmday.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSSTmday.html#directory-structure">Directory Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompMWSSTmday.html#usage-example">Usage Example</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="roylib.html" class="btn btn-neutral float-right" title="roylib Script" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Roy Mendelssohn &amp; Madison Richardson.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
