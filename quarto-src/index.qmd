@@ -1,0 +1,30 @@
+---
+title: "Documentation of Roy's Processing Scripts for SWFSC Data Servers"
+---
+
+## Welcome
+
+This site documents Roy Mendelssohn's suite of processing scripts for SWFSC Data servers. 
+
+Here you'll find:
+
+- **Utility Library** (`roylib.py`):
+  Library used by many of the Python scripts on saltydog.
+
+- **MODISA Processing Scripts**
+  The MODISA scripts take Level-2 (L2) MODIS-Aqua swath files for both MB (Pacific Ocean) and MW (West Coast) products, automatically downloading, filtering, gridding, and applying land masks and quality flags. They then generate CF-Compliant 1-, 3-, 8-, 14- day or monthly SST or Chlorophyll-a composite NetCDFs ready for deployment to ERDDAP. 
+
+  - **Data Ingestion & Orchestration** (`newGetModis.py`):  
+    Fetch Level-2 files, track new data, and drive the 1-day, multi-day, and monthly composite workflows for the MB and MW datasets.
+
+  - **MB Datasets** (`make*1daynewMB.py`, `CompMB*.py`, `CompMW*mday.py`):
+    Pacific Ocean SST & Chlorophyll-a scripts for making 1-, 3-, 8-, 14- day or monthly composites.
+
+  - **MW Datasets** (`make*1daynewMW.py`, `CompMW*.py`, `CompMW*mday.py`): 
+    West Coast SST & Chlorophyll-a scripts for making 1-, 3-, 8-, 14- day or monthly composites.
+
+
+ - **Full API & Workflow Documentation**: 
+   Sphinx-generated reference detailing every function’s docstring, script setup and configuration, command-line options, and an overview of the end-to-end workflow. [View the full API Reference](sphinx-api-website/index.html)
+
+Use the left‐hand menu to jump to any section. Each script is tucked inside a foldable code block for easy browsing.

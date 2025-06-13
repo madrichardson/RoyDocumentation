@@ -1,0 +1,39 @@
+project:
+  type: website
+  
+website:
+  title: "Documentation of Roy's Scripts"
+  sidebar:
+    logo: "images/CW_logo.png"
+    pinned: true
+    align: center
+
+    style: "docked"  # always visible on the left
+    search: true
+    collapse-level: 3  # how deep to show headings
+    contents:
+      - text: "Welcome"
+        href: index.html
+      - text: "Utility Library"
+        href: roylib.qmd
+      - section: modisa_scripts.qmd
+        text: "MODISA Scripts"
+        contents:
+          - mb_datasets.qmd
+          - mw_datasets.qmd
+      - text: "API Reference"
+        href: sphinx-api-website/index.html
+
+resources:
+  - sphinx-api-website/**
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: right
+    code-fold: true
+    code-line-numbers: true
+    css: 
+      - _quarto/rtd-font.css
+      - styles.css
