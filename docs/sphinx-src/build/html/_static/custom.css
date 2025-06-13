@@ -1,0 +1,24 @@
+/* custom.css */
+
+.backlink {
+  display: inline-block;
+  background-color: #2980b9;   /* same blue as RTD’s header */
+  color: #fff !important;
+  padding: 0.4rem 0.8rem;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.backlink:hover {
+  background-color: #216a94;   /* slightly darker on hover */
+  color: #fff !important;      /*keep text white on hover */
+}
+
+/* override inline literal (``red``) color */
+code.literal {
+  color: #0066CC !important;
+  background: #F7F9FB;
+} 
