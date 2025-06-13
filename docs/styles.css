@@ -1,0 +1,26 @@
+/* 1) Outer wrapper must show gutter */
+.sourceCode {
+  overflow: visible !important;
+  position: relative; /* enable sticky children */
+}
+
+/* 2) Pin the lineno column */
+.sourceCode .linenos {
+  position: sticky !important;
+  left: 0;
+  top: 0;
+  background-color: #f7f9fb !important;  /* match code background */
+  padding-right: 0.5em;
+  z-index: 2;
+}
+
+/* 3) Scroll only the code <pre> */
+.sourceCode pre {
+  max-height: 400px !important;
+  overflow-x: auto !important;
+  overflow-y: auto !important;
+  white-space: pre !important;
+  margin: 0 !important;
+  padding-left: 3em !important;  /* leave room for the gutter */
+  font-size: 0.85rem !important;
+}
