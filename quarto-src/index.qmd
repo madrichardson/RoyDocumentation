@@ -25,6 +25,6 @@ Here you'll find:
 
 
  - **Full API & Workflow Documentation**: 
-   Sphinx-generated reference detailing every function’s docstring, script setup and configuration, command-line options, and an overview of the end-to-end workflow. [View the full API Reference](sphinx-api-website/index.html)
+   Sphinx-generated reference detailing every function’s docstring, script setup and configuration, command-line options, and an overview of the end-to-end workflow. [View the full API Reference](api/index.html)
 
 Use the left‐hand menu to jump to any section. Each script is tucked inside a foldable code block for easy browsing.

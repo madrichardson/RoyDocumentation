@@ -22,10 +22,10 @@ website:
           - mb_datasets.qmd
           - mw_datasets.qmd
       - text: "API Reference"
-        href: sphinx-api-website/index.html
+        href: api/index.html
 
 resources:
-  - sphinx-api-website/**
+  - api/**
 
 format:
   html:
